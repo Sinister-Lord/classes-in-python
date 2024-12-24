@@ -1,19 +1,19 @@
-class species:
-    def __init__(self , name , age) :
+class robot:
+    def __init__(self , name ,model) :
         self.name=name 
-        self.age=age
-    def sing (self, song ):
-        return f"{self.name } sings {song}"
-    def dance (self):
-        return f"{self.name } is now dancing "
-object1 = species("Cuckoo",14)        
-object2 = species("Parrot",12)
+        self.age=model
+    def company (self, company  ):
+        return f"{self.name } is from {company}"
+    def processor (self):
+        return f"{self.name } is now processing "
+object1 = robot("LinuxV",14)        
+object2 = robot("AiApply9",12)
     
-print (f"{object1.name} is {object1.age} years old")
-print (f"{object2.name} is {object2.age} years old")
+print (f"{object1.name} is a {object1.age}th gen model")
+print (f"{object2.name} is a {object2.age}th gen model")
 
-print(object1.sing("happy"))
-print(object1.dance())
-print(object2.sing("sad"))
-print(object2.dance())
+print(object1.company("Nvidia"))
+print(object1.processor())
+print(object2.company("Xerxes"))
+print(object2.processor())
 
